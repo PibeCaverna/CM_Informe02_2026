@@ -13,6 +13,13 @@ campo es:
 - **tita2** el ángulo del motor, a partir del cual se obtiene su velocidad
 - **ts** el tiempo en el cual se tomó cada muestra
 - **u** el valor de referencia utilizado
+Se implementa un filtro de butterworth para suavizar las señales, el
+filtrado se realiza en la diferenciación con el siguiente orden:
+1. Se filtran los titas
+2. Se calculan las velocidades
+3. Se filtran las velocidades
+4. Se calculan las aceleraciones
+5. Se filtran las aceleraciones
 
 ## Segunda Parte
 
