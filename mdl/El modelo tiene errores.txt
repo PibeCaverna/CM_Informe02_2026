@@ -1,0 +1,3 @@
+Este modelo en SIMULINK es para que usen de guía, pero tiene errores...
+
+Corríjanlo!
