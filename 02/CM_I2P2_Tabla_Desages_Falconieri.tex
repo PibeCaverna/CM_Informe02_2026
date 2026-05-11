@@ -1,0 +1,48 @@
+\documentclass[border=6pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{array}
+
+% --- Colores ---
+\definecolor{headerblue}{RGB}{30, 80, 140}
+\definecolor{headertext}{RGB}{255, 255, 255}
+\definecolor{rowlight}{RGB}{220, 232, 246}
+\definecolor{rowwhite}{RGB}{245, 249, 255}
+\definecolor{bordercolor}{RGB}{30, 80, 140}
+
+% Grosor de líneas
+\setlength{\arrayrulewidth}{0.6pt}
+\arrayrulecolor{bordercolor}
+
+% Padding interno de celdas
+\renewcommand{\arraystretch}{1.5}
+\setlength{\tabcolsep}{10pt}
+
+\begin{document}
+
+\begin{tabular}{|>{\bfseries}l|c|c|c|c|}
+    \hline
+    \rowcolor{headerblue}
+    \color{headertext}          &
+    \color{headertext}\textbf{Medicion 1} &
+    \color{headertext}\textbf{Medicion 2} &
+    \color{headertext}\textbf{Medicion 3} &
+    \color{headertext}\textbf{Medicion 4} \\
+    \hline
+    \rowcolor{rowlight}
+    $q_1$  & 6.6593  &  6.7409  &  6.6339  & 5.6762  \\
+    \hline
+    \rowcolor{rowwhite}
+    $q_2$  & -0.0630 & -0.1417  & -0.0982  & -0.0598 \\
+    \hline
+    \rowcolor{rowlight}
+    $q_3$  &  0.0035 &  0.0040  &  0       &  0.0013 \\
+    \hline
+    \rowcolor{rowwhite}
+    $\rho$ & -9.9424 & -1.9514  & -0.5059  &  0.4042 \\
+    \hline
+\end{tabular}
+
+\end{document}

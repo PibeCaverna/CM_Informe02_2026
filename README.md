@@ -23,4 +23,56 @@ filtrado se realiza en la diferenciación con el siguiente orden:
 
 ## Segunda Parte
 
+### Obtencion de representacion en variables de estado
+Partiendo de las ecuaciones diferenciales del informe 1:
+
+$$
+\begin{cases}
+  (I_1+m_1 c^2 + m_2 L^2 +I_2)\ddot\theta_1 + I_2 
+  \ddot{\theta}_2+g(m_1c+m_2L)\sin\theta_1 = 0 \\
+  I_2(\ddot{\theta}_1 + \ddot\theta_2) = 
+  \frac{Nk_T}{R}V_i-\frac{N^2k_Tk_f}{R}\dot\theta_2
+\end{cases}
+$$
+
+Se pueden identificar a las variables de estado como:
+
+$$
+\begin{cases}
+  x_1 = \theta_1 \\
+  x_2 = \dot x_1 = \dot\theta_1\\
+  x_3 = \theta_2 \\
+  x_4 = \dot x_3 = \dot\theta_2\\
+\end{cases}
+$$
+
+Luego, de resolver el sistema de ecuaciones para $\dot x_2$
+y $\dot x_3$:
+
+$$
+\begin{cases}
+\dot x_1 = x_2 \\
+\dot x_2 = -q_1\sin x_1+q_2x_4-q_3u \\
+\dot x_3 = x_4 \\
+\dot x_4 = q_1\sin x_1 - (\rho+1)q_2x_4 + (\rho+1)q_3u
+\end{cases}
+$$
+
+Entonces, quedaria plantear las ecuaciones:
+
+$$
+[\dot x_2] = [-\sin x_1,x_4,-u] [q1,q2,q3] \\
+[\dot x_4-q_1 \sin x_1] = [-q_2x_4+q_3u] [\rho-1]
+$$
+
+Donde la implementacion del planteo del 
+laboratorio 1 resulta en los siguientes valores:
+
+|     | Medicion 1| Medicion 2  |Medicion 3  | Medicion 4 |
+|-----|-----------|-------------|------------|------------|
+|q_1  | 6.6593    | 6.7409      | 6.6339     | 5.6762     |
+|q_2  |-0.0630    |-0.1417      |-0.0982     |-0.0598     |
+|q_3  | 0.0035    | 0.0040      |0           | 0.0013     |
+|rho  |-9.9424    |-1.9514      |-0.5059     | 0.4042     |
+
 ## Tercera Parte

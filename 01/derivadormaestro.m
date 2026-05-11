@@ -11,11 +11,13 @@ filtro.orden = 2;
 
 Mxx.v1 = finitopromedio(Mxx.tita1,Mxx.ts);
 Mxx.v1 = filtfilt(b,        a,    Mxx.v1);
+
 Mxx.v2 = finitopromedio(Mxx.tita1,Mxx.ts);
 Mxx.v2 = filtfilt(b,        a,    Mxx.v2);
 
 Mxx.a1 = finitopromedio(Mxx.v1,   Mxx.ts);
 Mxx.a1 = filtfilt(b,       a,    Mxx.a1);
+
 Mxx.a2 = finitopromedio(Mxx.v1,   Mxx.ts);
 Mxx.a2 = filtfilt(b,    a,    Mxx.a2);
 
