@@ -4,6 +4,6 @@ function [dx] = finitodescendente(x,t)
 % primer valor para tener vectores del mismo largo
 % en la entrada y la salida.
 T = mean(diff(t));
-dx = diff(x);
+dx = diff(x)/T;
 dx = [dx(1);dx];
 end
