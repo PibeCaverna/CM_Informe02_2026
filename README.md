@@ -2,8 +2,8 @@
 Modelo de ecuaciones de estados en identificación de parámetros  
 Se establece la entrega en tres partes:  
 - [x] Primera Parte *260428*  
-- [ ] Segunda Parte *260507*  
-- [ ] Tercera Parte *260521*  
+- [x] Segunda Parte *260507*  
+- [x] Tercera Parte *260521*  
 
 ## Primera Parte
 Estimación de las velocidades y aceleraciones a partir de mediciones.  
@@ -66,13 +66,10 @@ $$
 $$
 
 Donde la implementacion del planteo del 
-laboratorio 1 resulta en los siguientes valores:
-
-|     | Medicion 1| Medicion 2  |Medicion 3  | Medicion 4 |
-|-----|-----------|-------------|------------|------------|
-|q_1  | 6.6593    | 6.7409      | 6.6339     | 5.6762     |
-|q_2  |-0.0630    |-0.1417      |-0.0982     |-0.0598     |
-|q_3  | 0.0035    | 0.0040      |0           | 0.0013     |
-|rho  |-9.9424    |-1.9514      |-0.5059     | 0.4042     |
+laboratorio 1 resulta en los valores apreciables en el archivo 
+CM_IP2_Tabla_Desages_Falconieri.tex
 
 ## Tercera Parte
+Para correr el testbench, primero ejecute 02/Main.m, luego abra modelo.mdl y
+corra la simulación, empleando el workspace creado por el script mencionado
+previamente
